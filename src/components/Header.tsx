@@ -89,8 +89,8 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
           <div className="dropdown">
             <button className="dropdown-button">Due Date</button>
             <div className="dropdown-content">
-              <Link to="/">Ascending</a>
-              <Link to="/">Descending</a>
+              <Link to="/">Ascending</Link>
+              <Link to="/">Descending</Link>
             </div>
           </div>
         </div>
