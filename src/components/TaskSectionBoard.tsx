@@ -1,6 +1,5 @@
 import React from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
-import TaskItem from "./TaskItem.tsx";
 import TaskItemBoard from "./TaskItemBoard.tsx";
 
 interface TaskSectionProps {
