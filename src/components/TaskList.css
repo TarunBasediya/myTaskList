@@ -1,0 +1,168 @@
+.task-list-header-row,
+.task-item-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-list-header-row {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.task-item-row {
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.task-item-row:hover {
+  background-color: #f1f1f1;
+}
+
+.task-cell {
+  padding: 8px 12px;
+  overflow: visible;
+  text-overflow: ellipsis;
+  position: relative; 
+}
+
+.task-options-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+.task-options-button:hover {
+  color: #007bff;
+}
+
+.task-list-page {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.task-section {
+  margin-bottom: 20px;
+  border-radius: 16px;
+  overflow: visible;
+  background-color: #f1f1f1;
+}
+
+.section-title {
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.task-container {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border-top: 3px solid #e5e5e5;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #ffffff;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position below the button */
+  right: 0; /* Align the dropdown to the right */
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 8px 0;
+  width: 150px; /* Fixed width */
+  display: none; /* Hidden by default */
+  z-index: 10;
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  width: 100%; /* Full width */
+  text-align: left; /* Align text to the left */
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove borders */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2; /* Light gray background on hover */
+  color: #007bff; 
+}
+
+.task-options-button:focus + .dropdown-menu,
+.task-options-button:hover + .dropdown-menu,
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Fix for dropdown position and prevent overflow */
+.task-item-row {
+  position: relative; 
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+.task-cell.task-options {
+  position: relative; /* Ensure dropdown is relative to this container */
+}
+
+
+/* Status Dropdown Menu Styles */
+
+/* Dropdown item button styling */
+.status-dropdown-menu .dropdown-item {
+  background-color: transparent;
+  color: #333;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.status-dropdown-menu .dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #007bff;
+}
+
+/* Optional: Add color based on status (ToDo, In Progress, Completed) */
+.status-dropdown-menu .dropdown-item[data-status="ToDo"] {
+  color: #e74c3c; /* Red for ToDo */
+}
+
+.status-dropdown-menu .dropdown-item[data-status="In Progress"] {
+  color: #f39c12; /* Orange for In Progress */
+}
+
+.status-dropdown-menu .dropdown-item[data-status="Completed"] {
+  color: #2ecc71; /* Green for Completed */
+}

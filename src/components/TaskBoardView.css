@@ -1,0 +1,192 @@
+.task-item-row1 {
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .task-title1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .completed-task-title {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .task-footer1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .task-category1 {
+    font-weight: 500;
+  }
+  
+  .task-due-date1 {
+    font-style: italic;
+  }
+  
+  .task-options-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .task-options-button:hover {
+    color: #007bff;
+  }
+  
+  .dropdown-menu1 {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .dropdown-item1 {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .dropdown-item1:hover {
+    background: #f1f1f1;
+  }
+  
+  .status-dropdown-button1 {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .status-dropdown-menu1 {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .dropdown-item1 {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+  }
+  
+
+
+
+.task-board-container1 {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+    height: calc(100vh - 100px); /* Adjust based on header size */
+  }
+  
+  .task-section1 {
+    flex: 1;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-y: auto;
+    min-width: 300px;
+    height: 100%;
+  }
+  
+  .section-title1 {
+    padding: 0.5rem 1rem; /* Reduce padding to shrink the space */
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-family: sans-serif;
+    border-radius: 12px;
+    width: auto; /* Ensure it doesn't stretch to 100% */
+    display: inline-block; /* Shrink to fit the content */
+    margin-left: 20px; /* Add some space to the left */
+  }
+  
+  
+  
+  .task-container1 {
+    padding: 1rem;
+  }
+  
+  .task-item-row1 {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .task-item-row1:hover {
+    background: #f1f1f1;
+  }
+  
+  
+/* Dropdown item button styling */
+.status-dropdown-menu1 .dropdown-item1 {
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .status-dropdown-menu1 .dropdown-item1:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+  }
+  
+  /* Optional: Add color based on status (ToDo, In Progress, Completed) */
+  .status-dropdown-menu1 .dropdown-item1[data-status="ToDo"] {
+    color: #e74c3c; /* Red for ToDo */
+  }
+  
+  .status-dropdown-menu1 .dropdown-item1[data-status="In Progress"] {
+    color: #f39c12; /* Orange for In Progress */
+  }
+  
+  .status-dropdown-menu1 .dropdown-item1[data-status="Completed"] {
+    color: #2ecc71; /* Green for Completed */
+  }
+  

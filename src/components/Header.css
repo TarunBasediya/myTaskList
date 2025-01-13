@@ -1,0 +1,209 @@
+/* General Header Styling */
+header {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Top Section */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header-top h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-user-info span {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Navigation Section */
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #8f317c;
+}
+
+.logout-button {
+  padding: 5px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #e14d2a;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #cc3b1f;
+}
+
+/* Filter and Actions Section */
+.header-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px; /* Proper spacing between elements */
+}
+
+.filter-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dropdown Buttons */
+.dropdown-buttons {
+  display: flex;
+  gap: 10px; /* Spacing between the dropdown buttons */
+  align-items: center; /* Align with text */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropdown-button:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  top: 100%; /* Position right below the button */
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  padding: 5px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show on hover */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Search and Add Section */
+.search-and-add {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end; /* Align to the right */
+  width: 80%; /* Take full width */
+}
+
+.search-and-add input {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+}
+
+.add-task-button {
+  padding: 5px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #7b1984;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #bb89bf;
+}
+
+/* Divider */
+.header-divider {
+  height: 2px;
+  background-color: #ccc;
+  margin-top: 15px;
+}
+
+.profile-link {
+  color: #5f2b71; /* Nice blue shade */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Highlight text */
+  cursor: pointer; /* Indicate interactivity */
+  padding: 5px 10px; /* Add some spacing */
+  border-radius: 5px; /* Smooth edges */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.profile-link:hover {
+  background-color: #b59bc0; /* Blue background on hover */
+  color: #fff; /* White text on hover */
+}
+
+.profile-link:active {
+  background-color: #0056b3; /* Darker blue on click */
+}
