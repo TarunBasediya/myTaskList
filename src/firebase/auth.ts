@@ -7,7 +7,6 @@ import {
 } from "firebase/auth";
 import { setUser, clearUser } from "../redux/userSlice.ts";
 import app from "../firebaseConfig.ts";
-import { useDispatch } from "react-redux";
 import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 
 const auth = getAuth(app);
